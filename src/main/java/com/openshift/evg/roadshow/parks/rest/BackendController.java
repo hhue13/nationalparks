@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RequestMapping("/ws/info")
 @RestController
-public class BackendController{
+public class BackendController {
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public Backend get() {
-        return new Backend("nationalparks","National Parks", new Coordinates("47.039304", "14.505178"), 4);
+        return new Backend("nationalparks", "Austrian National Parks", new Coordinates("47.039304", "14.505178"), 4);
     }
 }
